@@ -15,6 +15,7 @@ struct choiseButton: ViewModifier {
             .tint(.mint)
             .font(.title3.bold())
             .shadow(radius: 5)
+            .animation(.interpolatingSpring(stiffness: 25, damping: 2), value: 50)
     }
 }
 
