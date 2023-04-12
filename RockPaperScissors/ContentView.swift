@@ -33,10 +33,12 @@ struct ContentView: View {
                 VStack{
                     Text("Rival choise is \(variants[Int.random(in:0...2)])")
                         .padding()
+                        .foregroundColor(.white)
                         
                     
                     Text("You choise is \(playerChoice)")
                         .padding()
+                        .foregroundColor(.white)
                     
                     HStack {
                         Button(variants[0]) {playerChoice = variants[0]}
@@ -46,10 +48,12 @@ struct ContentView: View {
                         Button(variants[2]) {playerChoice = variants[2]}
                             .modifier(choiseButton())
                     }
+                    
                 }
             }
         .navigationTitle("Rock, Paper, Scissors")
         .navigationBarTitleDisplayMode(.inline)
+        .foregroundColor(.white)
         }
     }
 }
